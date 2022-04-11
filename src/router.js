@@ -8,6 +8,7 @@ import OrdersVue from "./view/page/admin/Orders.vue";
 import UserVue from "./layout/User.vue";
 import CheckoutVue from "./view/page/user/Checkout.vue"
 import produkVue from "./components/user/Produk.vue";
+import login from "./view/auth/Login.vue";
 
 const routes = [{
         path: "/admin",
@@ -33,7 +34,6 @@ const routes = [{
         ],
     },
     {
-
         component: UserVue,
         redirect: "/shop",
         children: [{
@@ -49,6 +49,12 @@ const routes = [{
             component: produkVue
         }, ]
     },
+
+    {
+        path: "/login",
+        component: login
+    },
+
     {
         path: "/:pathMatch(.*)*",
         component: E404Vue
