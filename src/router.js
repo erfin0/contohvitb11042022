@@ -8,10 +8,11 @@ import OrdersVue from "./view/page/admin/Orders.vue";
 import UserVue from "./layout/User.vue";
 import CheckoutVue from "./view/page/user/Checkout.vue"
 import produkVue from "./components/user/Produk.vue";
-import login from "./view/auth/Login.vue";
+import  login from "./view/auth/Login.vue";
+import Auth from "./layout/Auth.vue";
 
-const routes = [{
-        path: "/admin",
+const routes = [
+    {   path: "/admin",
         component: AdminVue,
         name: 'admin',
         redirect: "/dashboard",
@@ -34,8 +35,8 @@ const routes = [{
         ],
     },
     {
-        component: UserVue,
         redirect: "/shop",
+        component: UserVue,
         children: [{
             path: "/shop",
             component: ShopVue,
@@ -52,6 +53,7 @@ const routes = [{
 
     {
         path: "/login",
+        name: 'login',
         component: login
     },
 
@@ -66,6 +68,5 @@ const router = createRouter({
     history: createWebHistory(),
     routes,
 });
-
 
 export default router;

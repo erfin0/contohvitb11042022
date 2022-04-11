@@ -13,6 +13,7 @@ const navmenu = [
   },
 ];
 </script>
+
 <template>
 
 <li v-for="ite in navmenu" :key="ite.name">

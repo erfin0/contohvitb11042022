@@ -1,3 +1,17 @@
+<script>
+import shop from '../page/user/Shop.vue';
+import { useRouter } from 'vue-router';
+export default {
+    setup(){
+        const router = useRouter();
+        const login = () =>{
+            router.push({name:'user.shop'})
+        }
+        return {login}
+    }
+};
+</script>
+
 <template>
     <body class="bg-danau" >
         <div class="container">
@@ -11,7 +25,7 @@
                                     <div>
                                         <div id="panel-login-form" class="panel" >
                                             <h1>Masuk Panitia</h1>
-                                            <form action="/shop" method="post" class="user login mt-5">
+                                            <form method="post" class="user login mt-5" href="/shop">
                                                 <div class="form-group">
                                                     <label>Nama Pengguna</label>
                                                     <input type="text" name="username" class="form-control form-control-user efek-kaca">
@@ -21,7 +35,7 @@
                                                     <input type="password" name="password" class="form-control form-control-user efek-kaca">
                                                 </div>
                                                 <div class="text-right">
-                                                    <button type="submit" class="btn btn-primary">Masuk</button>
+                                                    <button @click="login" class="btn btn-primary">Masuk</button>
                                                 </div>
                                             </form>
                                         </div>
