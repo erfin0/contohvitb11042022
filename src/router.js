@@ -34,8 +34,8 @@ const routes = [
 
         ],
     },
-    {
-        redirect: "/shop",
+    {   
+        redirect: "/login",
         component: UserVue,
         children: [{
             path: "/shop",
@@ -50,7 +50,7 @@ const routes = [
             component: produkVue
         }, ]
     },
-
+    
     {
         path: "/login",
         name: 'login',

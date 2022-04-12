@@ -16,13 +16,8 @@ const navmenu = [
 
 <template>
 
-<li v-for="ite in navmenu" :key="ite.name">
-    <router-link
-      :to="{ name: ite.link }"
-      active-class="active"
-      class="nav-link"
-    > {{ ite.name }}
-    </router-link>
+  <li v-for="ite in navmenu" :key="ite.name">
+    <router-link :to="{ name: ite.link }" active-class="active" class="nav-link"> {{ ite.name }}</router-link>
   </li>
 
 </template>
