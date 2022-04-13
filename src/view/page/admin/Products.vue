@@ -55,7 +55,7 @@
 </script>
 
 <style>
-h2{
+/* h2{
   max-width: 1200px;
   margin: auto;
 }
@@ -67,5 +67,5 @@ button{
 table{
   max-width: 1200px;
   margin: auto;
-}
+} */
 </style>

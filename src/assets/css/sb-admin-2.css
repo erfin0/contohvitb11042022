@@ -1,0 +1,56 @@
+/* Tripath Custom ;) */
+.box-center-v {
+  margin-top: 25%;
+  transform: translateY(-25%);
+}
+.bg-danau {
+  background: url("../images/Sprinkle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+}
+.bg-flat {
+  background-color: #e5e5e5;
+}
+.efek-kaca {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+}
+form.user .form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+form.user .form-group label {
+  position: absolute;
+  top: -6px;
+  left: 14px;
+  font-size: 10px;
+  padding: 0 5px;
+  background-color: #FFF;
+}
+form.user.login .form-group {
+  margin: 40px 0;
+}
+form.user.login .form-group label {
+  background-color: transparent;
+  top: -25px;
+  font-size: 14px;
+}
+.cek-detail {
+  background-color: #222;
+}
+.form-group small {
+  font-size: 11px;
+}
+.form-group p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.box-shadow{
+  box-shadow: 0 0 25px #c0c0c0;
+}
+.container-xl, .container-lg, .container-md, .container-sm, .container{
+  max-width: 1600px;
+}
