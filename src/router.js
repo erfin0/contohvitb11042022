@@ -11,6 +11,7 @@ import produkVue from "./components/user/Produk.vue";
 import login from "./view/auth/Login.vue";
 import register from "./view/auth/Register.vue";
 import signup from "./view/auth/signup.vue";
+import teammember from "./view/page/admin/Teammember.vue";
 
 //import register from "/view/auth/Register.vue";
 //import signup from "/src/view/auth/signup.vue";
@@ -33,6 +34,11 @@ const routes = [{
             {
                 path: "/dashboard/orders",
                 component: OrdersVue,
+                name: 'admin.Orders'
+            },
+            {
+                path: "/dashboard/teammember",
+                component: teammember,
                 name: 'admin.Orders'
             },
 

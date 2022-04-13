@@ -44,6 +44,4 @@
   background-position: center center;
   height: 100%;
 }
-
-
 </style>
