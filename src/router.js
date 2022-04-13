@@ -13,8 +13,6 @@ import register from "./view/auth/Register.vue";
 import signup from "./view/auth/signup.vue";
 import teammember from "./view/page/admin/Teammember.vue";
 
-//import register from "/view/auth/Register.vue";
-//import signup from "/src/view/auth/signup.vue";
 
 const routes = [{
         path: "/admin",
@@ -46,7 +44,7 @@ const routes = [{
     },
     {
         component: UserVue,
-        redirect: "/shop",
+        redirect: "/login",
         children: [{
             path: "/shop",
             component: ShopVue,
@@ -69,10 +67,6 @@ const routes = [{
     {
         path: "/:pathMatch(.*)*",
         component: E404Vue
-    }, 
-    {
-        path: "/login",
-        component: login
     },
     {
         path: "/register",
