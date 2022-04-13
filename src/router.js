@@ -8,18 +8,10 @@ import OrdersVue from "./view/page/admin/Orders.vue";
 import UserVue from "./layout/User.vue";
 import CheckoutVue from "./view/page/user/Checkout.vue"
 import produkVue from "./components/user/Produk.vue";
-import  login from "./view/auth/Login.vue";
-import Auth from "./layout/Auth.vue";
 import login from "./view/auth/Login.vue";
-import register from "./view/auth/Register.vue";
-import signup from "./view/auth/signup.vue";
-import teammember from "./view/page/admin/Teammember.vue";
 
-//import register from "/view/auth/Register.vue";
-//import signup from "/src/view/auth/signup.vue";
-
-const routes = [
-    {   path: "/admin",
+const routes = [{
+        path: "/admin",
         component: AdminVue,
         name: 'admin',
         redirect: "/dashboard",
@@ -38,17 +30,12 @@ const routes = [
                 component: OrdersVue,
                 name: 'admin.Orders'
             },
-            {
-                path: "/dashboard/teammember",
-                component: teammember,
-                name: 'admin.Orders'
-            },
 
         ],
     },
-    {   
-        redirect: "/login",
+    {
         component: UserVue,
+        redirect: "/login",
         children: [{
             path: "/shop",
             component: ShopVue,
@@ -62,28 +49,15 @@ const routes = [
             component: produkVue
         }, ]
     },
-    
+
     {
         path: "/login",
-        name: 'login',
         component: login
     },
 
     {
         path: "/:pathMatch(.*)*",
         component: E404Vue
-    }, 
-    {
-        path: "/login",
-        component: login
-    },
-    {
-        path: "/register",
-        component: register
-    },
-    {
-        path: "/signup",
-        component: signup
     },
 ];
 
@@ -92,5 +66,6 @@ const router = createRouter({
     history: createWebHistory(),
     routes,
 });
+
 
 export default router;

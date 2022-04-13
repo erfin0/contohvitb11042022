@@ -1,6 +1,5 @@
 <script>
 import { useRouter } from 'vue-router';
-import Background from "../../components/Background.vue";
 export default {
     setup() {
         const router = useRouter();
@@ -9,12 +8,10 @@ export default {
         };
         return { login };
     },
-    components: { Background }
 };
 </script>
 
 <template>
-<background />
     <div class="container">
         <div class="row justify-content-center box-center-v">
             <div class="col-lg-6 col-md-12">
@@ -54,13 +51,5 @@ export default {
 </template>
 
 <style>
-.bg-danau {
-  background: url("https://d34ip4tojxno3w.cloudfront.net/app/uploads/Rowing-a-boat-in-a-blue-lake-in-Finland.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
-}
-
 
 </style>
