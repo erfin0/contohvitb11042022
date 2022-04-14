@@ -1,5 +1,8 @@
 <template>
-<h2>Team Member</h2>
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h2>Team Member</h2>
+  </div>
       <div class="table-responsive">
         <table class="table">
           <thead class="table-dark">
@@ -8,7 +11,7 @@
               <th scope="col">Name</th>
               <th scope="col">Job</th>
               <th scope="col">Email</th>
-              <th scope="col">Header</th>
+              <th scope="col">No Handphone</th>
             </tr>
           </thead>
           <tbody>
@@ -57,6 +60,7 @@
           </tbody>
         </table>
       </div>
+</main>
 </template>
 
 <script setup>

@@ -12,6 +12,7 @@ import login from "./view/auth/Login.vue";
 import register from "./view/auth/Register.vue";
 import signup from "./view/auth/signup.vue";
 import teammember from "./view/page/admin/Teammember.vue";
+import logistics from "./view/page/admin/Logistics.vue"
 
 
 const routes = [{
@@ -23,6 +24,11 @@ const routes = [{
                 path: "/dashboard",
                 component: DashboardVue,
                 name: 'admin.Dashboard'
+            },
+            {
+                path: "/dashboard/logistic",
+                component: logistics ,
+                name: 'admin.Logistic'
             },
             {
                 path: "/dashboard/products",
@@ -37,7 +43,7 @@ const routes = [{
             {
                 path: "/dashboard/teammember",
                 component: teammember,
-                name: 'admin.Orders'
+                name: 'admin.Teammember'
             },
 
         ],

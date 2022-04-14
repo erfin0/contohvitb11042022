@@ -2,7 +2,7 @@
   logistics
 </template>
 
-<script setup>
+<script>
 
 </script>
 
