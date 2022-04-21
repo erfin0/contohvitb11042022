@@ -32,20 +32,22 @@ export default {
               </div>
               <div class="text-right">
                 <button @click="login" class="btn btn-primary">login</button>
+                &nbsp;
+                <a href="/register" style="color: black;">Register</a>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </div>
   <router-view /> 
 </template>
 
 <style>
-@import '../../assets/css/sb-admin-2.css';
+@import '/src/assets/css/sb-admin-2.css';
+/* @import '../../assets/css/sb-admin-2.css'; */
 /* Tripath Custom ;) */
 
  form {
