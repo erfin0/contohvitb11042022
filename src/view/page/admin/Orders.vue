@@ -21,32 +21,42 @@
   
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="overview box box--primary">
           <div class="overview__number overview__number--normal">0</div>
             <div class="overview__label">
               <div class="overview__label__name">
-                  <span class="overview__text">Total Products</span>
+                  <span class="overview__text">Total Orders</span>
               </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="overview box box--primary">
           <div class="overview__number overview__number--normal">0</div>
             <div class="overview__label">
               <div class="overview__label__name">
-                  <span class="overview__text">Total Quantity Sold</span>
+                  <span class="overview__text">Total Paid</span>
               </div>
             </div>
           </div>
         </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="overview box box--primary">
           <div class="overview__number overview__number--normal">0</div>
             <div class="overview__label">
               <div class="overview__label__name">
-                  <span class="overview__text">Total Paid Order</span>
+                  <span class="overview__text">Paid Ratio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <div class="col-sm-6 col-md-3">
+        <div class="overview box box--primary">
+          <div class="overview__number overview__number--normal">0</div>
+            <div class="overview__label">
+              <div class="overview__label__name">
+                  <span class="overview__text">Unpaid Orders</span>
               </div>
             </div>
           </div>
