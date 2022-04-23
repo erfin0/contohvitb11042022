@@ -27,7 +27,7 @@ const routes = [{
             },
             {
                 path: "/dashboard/logistic",
-                component: logistics ,
+                component: logistics,
                 name: 'admin.Logistic'
             },
             {
@@ -50,7 +50,7 @@ const routes = [{
     },
     {
         component: UserVue,
-        redirect: "/login",
+        redirect: "/shop",
         children: [{
             path: "/shop",
             component: ShopVue,
@@ -68,7 +68,7 @@ const routes = [{
     {
         path: "/login",
         component: login,
-        name:'login.user'
+        name: 'login.user'
     },
 
     {
