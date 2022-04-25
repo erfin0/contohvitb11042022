@@ -1,6 +1,7 @@
 <script setup>
 import axios from "axios";
 import { onMounted, ref } from "vue";
+import { useRouter } from "vue-router";
 
 const produks = ref([]);
 const limit = ref(10);
@@ -8,14 +9,16 @@ const offset = ref(0);
 const countAll = ref(0);
 const countt = ref(0);
 
+
+const router = useRouter();
 onMounted(() => {
  // a(limit.value, offset.value);
-  console.log('The id is: ' + this.$route.params.slk);
+ // console.log('The id is: ' + router.params.slug);
 });
 
 function a(alimit, aoffset) {
   axios 
-    .get(`http://localhost/toko/public/api/produk/${this.$route.params.slk}`)
+    .get(`http://api.everest-app.com/api/${router.params.slug}`)
     .then((result) => {
       produks.value = result.data;
       countAll.value = result.data.info.countAll;
@@ -44,7 +47,7 @@ function abbreviateNumber(value) {
 </script>
 
 <template>
-  tes {{ $route.params.slk }}
+tes 
 </template>
 
 <style></style>

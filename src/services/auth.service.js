@@ -1,6 +1,6 @@
 import axios from 'axios';
-//const API_URL = 'http://api.everest-app.com/api/';
-const API_URL = 'http://localhost/toko/public/api/';
+const API_URL = 'http://api.everest-app.com/api/';
+//const API_URL = 'http://localhost/toko/public/api/';
 
 class AuthService {
     login(user) {

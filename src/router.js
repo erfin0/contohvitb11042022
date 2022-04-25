@@ -60,12 +60,12 @@ const routes = [{
             component: CheckoutVue,
             name: 'user.checkout'
         }, {
-            path: "/produk/:slk",
+            path: "/produk/:slug",
             component: produkVue
         }, {
-            path:"/shop",
+            path: "/shop",
             component: ShopVue,
-            name:'user.shop'
+            name: 'user.shop'
         }, ]
     },
 
