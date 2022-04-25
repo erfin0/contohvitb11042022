@@ -26,6 +26,14 @@ const routes = [{
                 name: 'admin.Dashboard'
             },
             {
+<<<<<<< HEAD
+=======
+                path: "/dashboard/logistic",
+                component: logistics,
+                name: 'admin.Logistic'
+            },
+            {
+>>>>>>> 9542a70cd9316bc1f377ae63f52adbdccd766efd
                 path: "/dashboard/products",
                 component: ProductsVue,
                 name: 'admin.Products'
@@ -50,7 +58,7 @@ const routes = [{
     },
     {
         component: UserVue,
-        redirect: "/login",
+        redirect: "/shop",
         children: [{
             path: "/home",
             component: HomeVue,

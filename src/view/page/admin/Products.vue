@@ -59,17 +59,17 @@
   <div class="row">
     <div class="col-xs-6 col-md-5">
      <div class="table-actions d-flex align-items-center flex-wrap">
-        <a href="#" class="btn btn-primary btn-sm flex-center mr-2" role="button" data-bs-toggle="button">
+        <a href="#" class="btn btn-primary btn-sm flex-center mr-2 btnA" role="button" data-bs-toggle="button">
           <span>Add Products</span>
           <i class="fa-solid fa-plus"></i>
         </a>
-        <button class="btn btn-secondary btn-sm btn-icon btn-icon-danger">
+        <button class="btn btn-secondary btn-sm btnA">
            <span>Delete</span>
           <i class="fa-solid fa-trash"></i>
         </button>
-      <button class="btn btn-secondary btn-sm">Action</button>
-      <button class="btn btn-secondary btn-sm">Export</button>
-      <button class="btn btn-secondary btn-sm">Import</button>
+      <button class="btn btn-secondary btn-sm btnA">Action</button>
+      <button class="btn btn-secondary btn-sm btnA">Export</button>
+      <button class="btn btn-secondary btn-sm btnA">Import</button>
       </div>
     </div>
   </div>

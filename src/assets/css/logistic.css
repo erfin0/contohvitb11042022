@@ -1,0 +1,12 @@
+.div{
+    display: block;
+  }
+.overview {
+    text-align: center;
+}
+.box {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #d9dee2;
+    border-radius: 3px;}
