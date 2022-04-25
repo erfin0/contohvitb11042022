@@ -4,7 +4,7 @@ export default {
     setup() {
         const router = useRouter();
         const login = () => {
-            router.push({ name: "user.shop" });
+            router.push({ name: "user.home" });
         };
         return { login };
     },

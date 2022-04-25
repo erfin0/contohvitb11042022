@@ -1,8 +1,8 @@
 <template>
-  <section class="padding-y">
+<section class="padding-y">
 <div class="container">
 
-	<header class="section-heading">
+	<header class="pt-5 pb-4">
 		<h3 class="section-title">New products</h3>
 	</header> 
 

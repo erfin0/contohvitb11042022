@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import E404Vue from "./view/page/E404.vue";
-import ShopVue from "./view/page/user/Shop.vue";
+import HomeVue from "./view/page/user/Home.vue";
 import AdminVue from "./layout/Admin.vue";
 import DashboardVue from "./view/page/admin/Dashboard.vue";
 import ProductsVue from "./view/page/admin/Products.vue";
@@ -10,9 +10,9 @@ import CheckoutVue from "./view/page/user/Checkout.vue"
 import produkVue from "./components/user/Produk.vue";
 import login from "./view/auth/Login.vue";
 import register from "./view/auth/Register.vue";
-import signup from "./view/auth/signup.vue";
+import ShopVue from "./view/page/user/Shop.vue";
 import teammember from "./view/page/admin/Teammember.vue";
-import logistics from "./view/page/admin/Logistics.vue"
+import logistic from "./view/page/admin/Logistics.vue";
 
 
 const routes = [{
@@ -24,11 +24,6 @@ const routes = [{
                 path: "/dashboard",
                 component: DashboardVue,
                 name: 'admin.Dashboard'
-            },
-            {
-                path: "/dashboard/logistic",
-                component: logistics ,
-                name: 'admin.Logistic'
             },
             {
                 path: "/dashboard/products",
@@ -43,7 +38,12 @@ const routes = [{
             {
                 path: "/dashboard/teammember",
                 component: teammember,
-                name: 'admin.Teammember'
+                name: 'admin.teammember'
+            },
+            {
+                path: "/dashboard/logistic",
+                component: logistic,
+                name: 'admin.logistic'
             },
 
         ],
@@ -52,9 +52,9 @@ const routes = [{
         component: UserVue,
         redirect: "/login",
         children: [{
-            path: "/shop",
-            component: ShopVue,
-            name: 'user.shop'
+            path: "/home",
+            component: HomeVue,
+            name: 'user.home'
         }, {
             path: "/checkout",
             component: CheckoutVue,
@@ -62,13 +62,17 @@ const routes = [{
         }, {
             path: "/produk/:slk",
             component: produkVue
+        }, {
+            path:"/shop",
+            component: ShopVue,
+            name:'user.shop'
         }, ]
     },
 
     {
         path: "/login",
         component: login,
-        name:'login.user'
+        name: 'login.user'
     },
 
     {
