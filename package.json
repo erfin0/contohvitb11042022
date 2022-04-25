@@ -1,31 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "vitb04042022",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@popperjs/core": "^2.11.4",
-    "axios": "^0.26.1",
-    "bootstrap": "^5.1.3",
-    "install": "^0.13.0",
-    "vue": "^3.2.25",
-    "vue-router": "4",
-    "vuejs-paginate-next": "^1.0.2",
-    "vuex": "^4.0.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.0",
-    "sass": "^1.49.11",
-    "vite": "^2.9.0"
-  }
-=======
     "name": "vitb04042022",
     "private": true,
     "version": "0.0.0",
@@ -53,5 +26,4 @@
         "sass": "^1.49.11",
         "vite": "^2.9.0"
     }
->>>>>>> 9542a70cd9316bc1f377ae63f52adbdccd766efd
 }

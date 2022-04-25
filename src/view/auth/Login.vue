@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-<script>
-import { useRouter } from 'vue-router';
-export default {
-    setup() {
-        const router = useRouter();
-        const login = () => {
-            router.push({ name: "user.home" });
-        };
-        return { login };
-=======
 <script setup>
 import { useRouter } from "vue-router";
 import { useStore } from "vuex";
@@ -29,14 +18,13 @@ const schema = yup.object({
 onMounted(() => {
   if (loggedIn.value) {
     router.push("/shop");
-  }
+  } 
 });
 function onSubmit(values) {
   loading.value = true;
   store.dispatch("auth/login", values).then(
     () => {
       router.push("/shop");
->>>>>>> 9542a70cd9316bc1f377ae63f52adbdccd766efd
     },
     (error) => {
       loading.value = false;
