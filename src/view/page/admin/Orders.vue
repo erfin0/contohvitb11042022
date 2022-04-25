@@ -73,16 +73,17 @@
           <span>Add Products</span>
           <i class="fa-solid fa-plus"></i>
         </a>
-      <button class="btn btn-secondary btn-sm">Export</button>
-      <button class="btn btn-secondary btn-sm">Barcode</button>
-      <button class="btn btn-secondary btn-sm">Upload Receipt Number</button>
+      <button class="btn btn-secondary btn-sm btnA">Export</button>
+      <button class="btn btn-secondary btn-sm btnA">Barcode</button>
+      <button class="btn btn-secondary btn-sm btnA">Upload Receipt Number</button>
       </div>
     </div>
   </div>
 </div>
+
   
 
-  <div class="productlist-table">
+  <div class="orders-table">
     <div class="table-responsive">
         <table class="table">
           <thead class="table-dark">
@@ -99,6 +100,39 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>1982</td>
+              <td>haha hihi</td>
+              <td>Bandung</td>
+              <td>shipped</td>
+              <td>paid</td>
+              <td>04/10/2022</td>
+              <td>70%</td>
+              <td>eradva</td>
+              <td>ergaed</td>
+            </tr>
+            <tr>
+              <td>1982</td>
+              <td>haha hihi</td>
+              <td>Bandung</td>
+              <td>shipped</td>
+              <td>paid</td>
+              <td>04/10/2022</td>
+              <td>70%</td>
+              <td>eradva</td>
+              <td>ergaed</td>
+            </tr>
+            <tr>
+              <td>1982</td>
+              <td>haha hihi</td>
+              <td>Bandung</td>
+              <td>shipped</td>
+              <td>paid</td>
+              <td>04/10/2022</td>
+              <td>70%</td>
+              <td>eradva</td>
+              <td>ergaed</td>
+            </tr>
             <tr>
               <td>1982</td>
               <td>haha hihi</td>
