@@ -21,7 +21,7 @@ function logOut() {
         <div class="container-fluid main-menu">
           <div class="logo">
             <router-link to="/shop" class="navbar-brand">Home</router-link>
-           
+
           </div>
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto fs-6">

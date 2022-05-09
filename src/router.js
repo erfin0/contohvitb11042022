@@ -13,6 +13,9 @@ import register from "./view/auth/Register.vue";
 import ShopVue from "./view/page/user/Shop.vue";
 import teammember from "./view/page/admin/Teammember.vue";
 import logistic from "./view/page/admin/Logistics.vue";
+import UserProfile from "./view/page/user/UserProfile.vue";
+import product from "./view/page/user/product.vue";
+import OrderUss from "./view/page/user/OrdersUss.vue";
 
 
 const routes = [{
@@ -66,7 +69,19 @@ const routes = [{
             path: "/shop",
             component: ShopVue,
             name: 'user.shop'
-        }, ]
+        }, 
+        {
+            path: "/UserProfile",
+            component: UserProfile,
+            name: 'user.profile'
+        },
+        {
+            path:"/product",
+            component: product,
+            name: 'user.product' 
+        }
+    
+    ]
     },
 
     {
@@ -82,6 +97,10 @@ const routes = [{
     {
         path: "/register",
         component: register
+    },
+    {
+        path: "/orderUser",
+        component: OrderUss
     },
 ];
 
