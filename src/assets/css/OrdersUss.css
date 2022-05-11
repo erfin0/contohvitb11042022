@@ -1,6 +1,5 @@
-.obody{margin-top:20px;
+tbody{margin-top:75px;
     background:#eee;
-    margin-top: 75px;
 }
 .h3 {
     font-size: 16px;
@@ -29,7 +28,7 @@
   color: #d1dade;
 }
 .ecommerce .fa-star.active {
-  color: #f8ac59;
+  color: #4d4d4d;
 }
 .ecommerce .note-editor {
   border: 1px solid #e7eaec;

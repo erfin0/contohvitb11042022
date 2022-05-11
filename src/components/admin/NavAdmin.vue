@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -86,11 +85,8 @@
         </ul>
       </div>
     </nav>
-
-    
   </div>
-</div>
-    
+</div>  
 </template>
 
 <style>

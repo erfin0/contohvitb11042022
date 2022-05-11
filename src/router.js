@@ -17,7 +17,6 @@ import UserProfile from "./view/page/user/UserProfile.vue";
 import product from "./view/page/user/product.vue";
 import OrderUss from "./view/page/user/OrdersUss.vue";
 
-
 const routes = [{
         path: "/admin",
         component: AdminVue,

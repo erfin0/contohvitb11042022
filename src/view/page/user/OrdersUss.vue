@@ -1,5 +1,4 @@
 <template>
-
 <div class="sticky-bar">
     <div class="border-bottom">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,7 +38,7 @@
                 <div class="ibox-content">
                     <div class="table-responsive">
                         <table class="table shoping-cart-table">
-                            <bodyo>
+                            <tbody>
                             <tr>
                                 <td width="90">
                                     <div class="cart-product-imitation">
@@ -80,7 +79,7 @@
                                     </h4>
                                 </td>
                             </tr>
-                            </bodyo>
+                            </tbody>
                         </table>
                     </div>
 
@@ -89,7 +88,7 @@
                     <div class="table-responsive">
                         <table class="table shoping-cart-table">
 
-                            <bodyoo>
+                            <tbody>
                             <tr>
                                 <td width="90">
                                     <div class="cart-product-imitation">
@@ -130,7 +129,7 @@
                                 </td>
 
                             </tr>
-                            </bodyoo>
+                            </tbody>
                         </table>
                     </div>
 
@@ -139,7 +138,7 @@
                     <div class="table-responsive">
                         <table class="table shoping-cart-table">
 
-                            <bodyo>
+                            <tbody>
                             <tr>
                                 <td width="90">
                                     <div class="cart-product-imitation">
@@ -180,7 +179,7 @@
                                 </td>
 
                             </tr>
-                            </bodyo>
+                            </tbody>
                         </table>
                     </div>
 
@@ -189,7 +188,7 @@
                     <div class="table-responsive">
                         <table class="table shoping-cart-table">
 
-                            <bodyo>
+                            <tbody>
                             <tr>
                                 <td width="90">
                                     <div class="cart-product-imitation">
@@ -229,7 +228,7 @@
                                 </td>
 
                             </tr>
-                            </bodyo>
+                            </tbody>
                         </table>
                     </div>
 
@@ -238,7 +237,7 @@
                     <div class="table-responsive">
                         <table class="table shoping-cart-table">
 
-                            <bodyo>
+                            <tbody>
                             <tr>
                                 <td width="90">
                                     <div class="cart-product-imitation">
@@ -275,16 +274,15 @@
                                     </h4>
                                 </td>
                             </tr>
-                            </bodyo>
+                            </tbody>
                         </table>
                     </div>
                 </div>
                 <div class="ibox-content">
-                    <button class="btn btn-primary pull-right"><i class="fa fa fa-shopping-cart"></i> Checkout</button>
-                    <button class="btn btn-white"><i class="fa fa-arrow-left"></i>Shop</button>
+                    <a href="/checkout" class="btn btn-primary pull-right"><i class="fa fa fa-shopping-cart"></i> Checkout</a>
+                    <a href="/shop" class="btn btn-white"><i class="fa fa-arrow-left"></i>Shop</a>
                 </div>
             </div>
-
         </div>
         <div class="col-md-3">
             <div class="ibox">
@@ -348,7 +346,6 @@
                             Many desktop publishing packages and web page editors now.
                         </div>
                         <div class="m-t text-righ">
-
                             <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
                         </div>
                     </div>
