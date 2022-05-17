@@ -36,7 +36,7 @@ tbody{margin-top:75px;
 table.shoping-cart-table {
   margin-bottom: 0;
 }
-table.shoping-cart-table tr td {
+.table.shoping-cart-table tr td {
   border: none;
   text-align: right;
 }
