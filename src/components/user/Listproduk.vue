@@ -5,7 +5,7 @@ import Paginate from "vuejs-paginate-next";
 //import {abbreviateNumber} from "@/helper/function.js";
 
 const produks = ref([]);
-const limit = ref(10);
+const limit = ref(12);
 const offset = ref(0);
 const countAll = ref(0);
 const countt = ref(0);
@@ -69,19 +69,9 @@ function precise(x) {
 <template>
   <section class="py-5">
     <div class="container mt-5">
-      <paginate
-        :page-count="countt"
-        :page-range="3"
-        :margin-pages="2"
-        :click-handler="clickCallback"
-        :prev-text="'Prev'"
-        :next-text="'Next'"
-        :container-class="'pagination'"
-        :page-class="'page-item'"
-      >
-      </paginate>
+      
       <div
-        class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+        class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" 
       >
         <div
           v-for="(produk, index) in produks.data"
@@ -146,6 +136,17 @@ function precise(x) {
           </router-link>
         </div>
       </div>
+      <paginate
+        :page-count="countt"
+        :page-range="3"
+        :margin-pages="2"
+        :click-handler="clickCallback"
+        :prev-text="'Prev'"
+        :next-text="'Next'"
+        :container-class="'pagination'"
+        :page-class="'page-item'"
+      >
+      </paginate>
     </div>
   </section>
 </template>

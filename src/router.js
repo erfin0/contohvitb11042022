@@ -16,6 +16,7 @@ import logistic from "./view/page/admin/Logistics.vue";
 import UserProfile from "./view/page/user/UserProfile.vue";
 import product from "./view/page/user/product.vue";
 import OrderUss from "./view/page/user/OrdersUss.vue";
+import Cart from "./view/page/user/cart.vue";
 
 const routes = [{
         path: "/admin",
@@ -73,6 +74,11 @@ const routes = [{
             path: "/UserProfile",
             component: UserProfile,
             name: 'user.profile'
+        },
+        {
+            path: "/Cart",
+            component: Cart,
+            name: 'user.cart'
         },
         {
             path:"/product",
