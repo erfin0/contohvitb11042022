@@ -32,6 +32,7 @@
             <h3>Payment</h3>
             <label for="fname">Accepted Cards</label>
             <div class="icon-container">
+              <i class="fa-brands fa-amaz"></i>
               <i class="fa fa-cc-visa" style="color:navy;"></i>
               <i class="fa fa-cc-amex" style="color:blue;"></i>
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
@@ -60,7 +61,9 @@
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" class="btnB">
+        <router-link to="/Dikemas" >
+          <input type="submit" value="Continue to checkout" class="btnB">
+        </router-link>
       </form>
     </div>
   </div>
