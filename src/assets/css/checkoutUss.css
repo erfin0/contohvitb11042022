@@ -1,87 +1,45 @@
-.rowB {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    margin: 0 -16px;
-  }
-  
-  .col-25 {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-  }
-  
-  .col-50 {
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-  }
-  
-  .col-75 {
-    -ms-flex: 75%; /* IE10 */
-    flex: 75%;
-  }
-  
-  .col-25,
-  .col-50,
-  .col-75 {
-    padding: 0 16px;
-  }
-  
-  .containerB {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
-  
-  .input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
-  }
-  
-  .btnB {
-    background-color: black;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
-  }
-  
+.row {
+  --ct-gutter-x: 24px;
+  --ct-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--ct-gutter-y)*-1);
+  margin-right: calc(var(--ct-gutter-x)*-0.5);
+  margin-left: calc(var(--ct-gutter-x)*-0.5);
+}
+.top {
+  margin-top: 75px;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+.div {
+  display: block;
+}
+.rounded {
+  border-radius: 0.25rem!important;
+}
+.p-3 {
+  padding: 1.5rem!important;
+}
+.mt-4 {
+  margin-top: 2.25rem!important;
+}
+.border {
+  border: 1px solid #dee2e6!important;
+  border: 1px solid var(--ct-border-color)!important;
+}
+card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-color: var(--ct-card-bg);
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid var(--ct-card-border-color);
+  border-radius: 0.25rem;
+}
 
-  
-  .span.price {
-    float: right;
-    color: grey;
-  }
-
-  .tp-1{
-      margin-top: 100px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
-    .row {
-      flex-direction: column-reverse;
-    }
-    .col-25 {
-      margin-bottom: 20px;
-    }
-  }
