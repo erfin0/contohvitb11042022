@@ -20,7 +20,7 @@ function logOut() {
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid main-menu">
           <div class="logo">
-            <router-link to="/shop" class="navbar-brand">Home</router-link>
+            <router-link to="/home" class="navbar-brand">Home</router-link>
           </div>
           <button
             class="navbar-toggler"

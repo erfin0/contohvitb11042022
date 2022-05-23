@@ -16,7 +16,7 @@ onMounted(() => {
 
 function a(alimit, aoffset) {
   axios
-    .get("http://api.everest-app.com/api/products", {
+    .get("http://api.everest-app.com/api/user/products", {
       params: {
         limit: alimit,
         offset: aoffset,
@@ -67,11 +67,10 @@ function precise(x) {
 </script>
 
 <template>
-  <section class="py-5">
-    <div class=" mt-5">
-      
+  <section>
+    <div class="mt-3">
       <div
-        class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center" 
+        class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-4 justify-content-center"
       >
         <div
           v-for="(produk, index) in produks.data"
@@ -94,10 +93,10 @@ function precise(x) {
               <img class="card-img-top" :src="produk.img" :alt="produk.nama" />
 
               <!-- Product details-->
-              <div class="card-body p-4">
+              <div class="card-body p-3 pb-4">
                 <div class="text-left">
                   <!-- Product name-->
-                  <h5 class="fw-bolder">{{ produk.nama }}</h5>
+                  <h5 class="fw-lighter text-dark">{{ produk.nama }}</h5>
                   <!-- Product reviews-->
                   <div
                     class="d-flex justify-content-center small text-warning mb-2"
@@ -110,7 +109,7 @@ function precise(x) {
                   </div>
                   <!-- Product price-->
                 </div>
-               <!--  <span class="text-muted text-decoration-line-through">
+                <!--  <span class="text-muted text-decoration-line-through">
                   {{
                     Intl.NumberFormat("id-ID", {
                       style: "currency",
@@ -159,7 +158,10 @@ function precise(x) {
 
 .cardproduk:hover {
   border-radius: 5px;
-  border: 1px rgb(33, 86, 96) solid;
+  /*  border: 1px rgb(33, 86, 96) solid; */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
 }
 </style>
