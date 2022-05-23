@@ -68,10 +68,10 @@ function precise(x) {
 
 <template>
   <section class="py-5">
-    <div class="container mt-5">
+    <div class=" mt-5">
       
       <div
-        class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" 
+        class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center" 
       >
         <div
           v-for="(produk, index) in produks.data"
