@@ -56,70 +56,73 @@ const routes = [{
     },
     {
         component: UserVue,
-        redirect: "/shop",
+        redirect: "/home",
         children: [{
-            path: "/home",
-            component: HomeVue,
-            name: 'user.home'
-        }, {
-            path: "/checkout",
-            component: CheckoutVue,
-            name: 'user.checkout'
-        }, {
-            path: "/produk/:slug",
-            component: produkVue
-        }, {
-            path: "/shop",
-            component: ShopVue,
-            name: 'user.shop'
-        }, 
-        {
-            path: "/UserProfile",
-            component: UserProfile,
-            name: 'user.profile'
-        },
-        {
-            path: "/Cart",
-            component: Cart,
-            name: 'user.cart'
-        },
-        {
-            path:"/product",
-            component: product,
-            name: 'user.product' 
-        },
-        {
-            path:"/Dikemas",
-            component: Shiping,
-            name: 'user.shiping' 
-        },
-        {
-            path:"/Dikirim",
-            component: send,
-            name: 'user.send' 
-        },
-        {
-            path:"/Sampai",
-            component: done,
-            name: 'user.done' 
-        },
-    
-    ]
+                path: "/home",
+                component: HomeVue,
+                name: 'user.home'
+            }, {
+                path: "/checkout",
+                component: CheckoutVue,
+                name: 'user.checkout'
+            }, {
+                path: "/produk/:slug",
+                component: produkVue,
+                name: 'user.produk'
+            }, {
+                path: "/shop",
+                component: ShopVue,
+                name: 'user.shop'
+            },
+            {
+                path: "/UserProfile",
+                component: UserProfile,
+                name: 'user.profile'
+            },
+            {
+                path: "/Cart",
+                component: Cart,
+                name: 'user.cart'
+            },
+            {
+                path: "/product",
+                component: product,
+                name: 'user.product'
+            },
+            {
+                path: "/Dikemas",
+                component: Shiping,
+                name: 'user.shiping'
+            },
+            {
+                path: "/Dikirim",
+                component: send,
+                name: 'user.send'
+            },
+            {
+                path: "/Sampai",
+                component: done,
+                name: 'user.done'
+            },
+
+        ]
     },
 
     {
         path: "/login",
         component: login,
-        name: 'login.user'
+        name: 'login'
     },
 
     {
         path: "/:pathMatch(.*)*",
-        component: E404Vue
+        component: E404Vue,
+        name: 'E404'
     },
     {
         path: "/register",
-        component: register
+        component: register,
+        name: 'register'
     },
     {
         path: "/orderUser",
@@ -131,6 +134,27 @@ const routes = [{
 const router = createRouter({
     history: createWebHistory(),
     routes,
+});
+
+router.beforeEach((to, from, next) => {
+    const publicPages = [
+        'user.home',
+        'user.shop',
+        'register',
+        'home',
+        'E404',
+        'login',
+        'user.produk',
+    ];
+    //  const authRequired = !publicPages.includes(to.path);
+    const authRequired = !publicPages.includes(to.name);
+    const loggedIn = localStorage.getItem('user');
+
+    if (authRequired && !loggedIn) {
+        next('/login');
+    } else {
+        next();
+    }
 });
 
 
