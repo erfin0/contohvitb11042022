@@ -17,6 +17,9 @@ import UserProfile from "./view/page/user/UserProfile.vue";
 import product from "./view/page/user/product.vue";
 import OrderUss from "./view/page/user/OrdersUss.vue";
 import Cart from "./view/page/user/cart.vue";
+import Shiping from "./view/page/user/dikemas.vue";
+import send from "./view/page/user/dikirim.vue";
+import done from "./view/page/user/done.vue";
 
 const routes = [{
         path: "/admin",
@@ -84,7 +87,22 @@ const routes = [{
             path:"/product",
             component: product,
             name: 'user.product' 
-        }
+        },
+        {
+            path:"/Dikemas",
+            component: Shiping,
+            name: 'user.shiping' 
+        },
+        {
+            path:"/Dikirim",
+            component: send,
+            name: 'user.send' 
+        },
+        {
+            path:"/Sampai",
+            component: done,
+            name: 'user.done' 
+        },
     
     ]
     },

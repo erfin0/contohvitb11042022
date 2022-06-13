@@ -80,14 +80,17 @@ function abbreviateNumber(value) {
                     <h6 class="font-14">Harga :</h6>
                     <h3>Rp.10.000</h3>
                   </div>
-                  <!--  -->
+                  <!-- Jumlah -->
                   <div class="mt-4">
                     <h6 class="mt-2">Jumlah</h6>
                     <div class="d-flex">
                       <input type="number" min="1" class="form-control" placeholder="Qty" value="1" style="width: 90px;">
-                      <button type="button" class="btn btn-danger ms-2"><i class="fa fa-cart-shopping"></i> Add to cart</button>
+                      <router-link to="/cart">
+                        <button type="button" class="btn btn-danger ms-2"><i class="fa fa-cart-shopping"></i> Add to cart</button>
+                      </router-link>
                     </div>
                   </div>
+                 <!-- Description -->
                   <div class="mt-4">
                     <h6>Deskripsi:</h6>
                     <p>

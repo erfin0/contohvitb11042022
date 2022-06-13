@@ -1,4 +1,6 @@
 <script setup>
+import NavCart from "@/components/navbar/NavCart.vue";
+
 </script>
 
 <template>
@@ -6,15 +8,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <!-- <div class="page-title-right">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Library</li>
-                            </ol>
-                        </nav>
-                    </div> -->
-                    <h4>Keranjang</h4>
+                    <h4> <i class="fa fa-cart-shopping"></i> Cart</h4>
                 </div>
             </div>
             <div class="row">
@@ -48,7 +42,10 @@
                                                             alt="Eum magnam nihil sint." height="63">
                                                     </td>
                                                     <td></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <input type="number" min="1" class="form-control"
+                                                            placeholder="Qty" value="1" style="width: 90px;">
+                                                    </td>
                                                     <td></td>
                                                 </tr>
                                                 <tr>
@@ -64,7 +61,10 @@
                                                             alt="Eum magnam nihil sint." height="63">
                                                     </td>
                                                     <td></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <input type="number" min="1" class="form-control"
+                                                            placeholder="Qty" value="1" style="width: 90px;">
+                                                    </td>
                                                     <td></td>
                                                 </tr>
                                                 <tr>
@@ -80,7 +80,10 @@
                                                             alt="Eum magnam nihil sint." height="63">
                                                     </td>
                                                     <td></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <input type="number" min="1" class="form-control"
+                                                            placeholder="Qty" value="1" style="width: 90px;">
+                                                    </td>
                                                     <td></td>
                                                 </tr>
                                                 <tr>
@@ -96,7 +99,10 @@
                                                             alt="Eum magnam nihil sint." height="63">
                                                     </td>
                                                     <td></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <input type="number" min="1" class="form-control"
+                                                            placeholder="Qty" value="1" style="width: 90px;">
+                                                    </td>
                                                     <td></td>
                                                 </tr>
                                             </tbody>
@@ -109,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 ms-5">
-                                    <div class="border p-3 mt-4 mt-lg-0 rounded">
+                                    <div class="border p-3 mt-4 mb-4 mt-lg-0 rounded">
                                         <h6 class="mb-3">Ringkasan belanja </h6>
                                         <div class="row">
                                             <div class="col">
@@ -122,7 +128,6 @@
                                             <div class="row mt-2">
 
                                                 <div class="col-9">
-
                                                     <input type="text" class="form-control form-control-light"
                                                         placeholder="Kupon">
                                                 </div>
@@ -140,9 +145,12 @@
 
                                         </div>
                                         <div class="d-grid ">
-                                            <Button type="button" class="btn btn-success ">Beli</Button>
+                                            <router-link to="/checkout" class="btn btn-success ">
+                                                <li type="button">Beli</li>
+                                            </router-link>
                                         </div>
                                     </div>
+                                    <NavCart />
                                 </div>
                             </div>
                         </div>
